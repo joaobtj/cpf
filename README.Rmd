@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# cpf
+
+O pacote `cpf` traz funções para validar o número do CPF brasileiro.
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+
+## Instalação
+
+Obtenha o pacote no GitHub:
+
+``` r
+#install.packages("devtools")
+devtools::install_github("joaobtj/cpf")
+```
+
+## Exemplo
+
+O número do CPF deve ser fornecido como um string com 11 dígitos.
+
+```{r example}
+library(cpf)
+valida_cpf("52998224725")
+```
+
+Retorna TRUE para um número válido.
