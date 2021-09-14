@@ -1,13 +1,13 @@
 Package: cpf
-Title: What the Package Does (One Line, Title Case)
+Title: Valida CPF
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Joao B.",
+           family = "Tolentino Jr.",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "joao.tolentino@ufsc.br",
+           comment = c(ORCID = "0000-0003-1303-4202"))
+Description: Este pacote traz funcoes para validar o numero do CPF brasileiro.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
