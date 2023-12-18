@@ -9,6 +9,15 @@
 #' valida_cpf("52998224725")
 valida_cpf <- function(x = "52998224725") {
 
+#transforma em string
+  if(!is.character(x)) x=as.character(x)
+
+  #verifica o tamanho do string e add zeros na frente (quando vem em formato numérico)
+  repeat{
+    if (stringr::str_length(x)==11) break
+    x=stringr::str_c("0",x)
+  }
+
   # verif1: o resultado da operacao deve ser igual ao primeiro digito verificador
   d1 <-
     x %>%
