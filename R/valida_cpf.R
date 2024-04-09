@@ -7,10 +7,13 @@
 #' @export
 #' @examples
 #' valida_cpf("52998224725")
-valida_cpf <- function(x = "52998224725") {
+valida_cpf <- function(x = "529.982.247-25") {
 
 #transforma em string
   if(!is.character(x)) x=as.character(x)
+
+  #remove caracterres nao numericos
+  x=stringr::str_remove_all(x,"\\D+")
 
   #verifica o tamanho do string e add zeros na frente (quando vem em formato numérico)
   repeat{
